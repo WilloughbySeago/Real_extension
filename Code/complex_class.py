@@ -1,4 +1,4 @@
-from errors import *
+from Code.errors import *
 import math
 
 
@@ -96,7 +96,3 @@ def from_euler(mod, arg):
     :return: Complex
     """
     return Complex(mod * math.cos(arg), mod * math.sin(arg))
-
-
-z = Complex(1, 2)
-w = Complex(2, 4)

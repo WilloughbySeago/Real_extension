@@ -1,4 +1,4 @@
-from complex_class import *
+from Code.complex_class import *
 
  
 class Quaternion:
@@ -68,8 +68,3 @@ class Quaternion:
 def complex_to_quaternion(z):
     if type(z) == Complex:
         return Quaternion([z.re, z.im, 0, 0])
-
-
-z = Quaternion([1, 2, 3, 4])
-w = Quaternion([6, 7, 9, 1])
-x = complex_to_quaternion(Complex(1, 2))

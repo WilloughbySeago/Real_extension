@@ -1,4 +1,4 @@
-from quaternion_class import *
+from Code.quaternion_class import *
 
 
 class Octonion:
@@ -64,9 +64,3 @@ def complex_to_octonion(z):
     z = complex_to_quaternion(z)
     z = quaternion_to_octonion(z)
     return z
-
-
-z = Octonion([1, 2, 3, 4, 5, 6, 7, 8])
-w = Octonion([5, 4, 7, 2, 9, 3, 7, 2])
-z.add(w).show()
-
